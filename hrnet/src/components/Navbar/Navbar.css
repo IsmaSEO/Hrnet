@@ -1,0 +1,94 @@
+.navbar {
+  background-color: #a3a360;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  width: auto;
+}
+
+/* Logo */
+.navbar-logo {
+  height: 80px;
+  margin-right: 20px;
+}
+
+/* Conteneur titre + logo */
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Titre */
+.navbar-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu de navigation */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Liens */
+.navbar-links li {
+  display: inline;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+/* Effet au survol */
+.navbar-links a:hover {
+  background-color: #8c8c5c;
+  transform: scale(1.05);
+}
+
+.navbar-links a.active {
+  background-color: #3a5a17;
+  color: #f5f5dc;
+  pointer-events: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar-content {
+    flex-direction: column;
+  }
+
+  .navbar-logo {
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .navbar-links a {
+    display: block;
+    width: 100%;
+  }
+}
