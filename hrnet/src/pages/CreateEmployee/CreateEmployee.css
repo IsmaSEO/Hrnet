@@ -1,0 +1,140 @@
+.create-employee-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9ef;
+}
+
+/* Organisation du contenu principal */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+/* Styles du header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.logo-container {
+  margin-bottom: 15px;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Titre + description */
+.app-title {
+  font-size: 26px;
+  font-weight: bold;
+  color: #2d572c;
+  text-align: center;
+}
+
+.app-description {
+  font-size: 16px;
+  color: #555;
+  text-align: center;
+}
+
+/* Mise en forme du formulaire */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #2d572c;
+}
+
+/* Conteneur du formulaire */
+.form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+.footer {
+  margin-top: auto;
+  background-color: #a3a360;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  height: 60px;
+  flex-shrink: 0;
+}
+
+/* Responsive pour tablettes (1024px et moins) */
+@media (max-width: 1024px) {
+  .form-container {
+    max-width: 90%;
+  }
+
+  .app-title {
+    font-size: 24px;
+  }
+
+  .app-description {
+    font-size: 14px;
+  }
+}
+
+/* Responsive pour mobiles (600px et moins) */
+@media (max-width: 600px) {
+  .main-content {
+    padding: 10px;
+  }
+
+  .app-title {
+    font-size: 22px;
+  }
+
+  .app-description {
+    font-size: 12px;
+  }
+
+  .form-container {
+    max-width: 95%;
+    padding: 15px;
+  }
+}
+
+/* Responsive pour petits mobiles (320px et moins) */
+@media (max-width: 320px) {
+  .app-title {
+    font-size: 20px;
+  }
+
+  .app-description {
+    font-size: 12px;
+  }
+
+  .form-container {
+    max-width: 100%;
+    padding: 10px;
+  }
+
+  .footer {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
